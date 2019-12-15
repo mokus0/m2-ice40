@@ -1,0 +1,249 @@
+EESchema Schematic File Version 4
+LIBS:m2-ice40-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L m2:TPSM82822 U?
+U 1 1 5E141E34
+P 5000 2000
+F 0 "U?" H 5350 2165 50  0000 C CNN
+F 1 "TPSM82821" H 5350 2074 50  0000 C CNN
+F 2 "" H 5000 2000 50  0001 C CNN
+F 3 "" H 5000 2000 50  0001 C CNN
+	1    5000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E141E3A
+P 4500 2500
+F 0 "C?" H 4615 2546 50  0000 L CNN
+F 1 "4.7u" H 4615 2455 50  0000 L CNN
+F 2 "" H 4538 2350 50  0001 C CNN
+F 3 "~" H 4500 2500 50  0001 C CNN
+	1    4500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E141E40
+P 7650 2600
+F 0 "C?" H 7765 2646 50  0000 L CNN
+F 1 "10u" H 7765 2555 50  0000 L CNN
+F 2 "" H 7688 2450 50  0001 C CNN
+F 3 "~" H 7650 2600 50  0001 C CNN
+	1    7650 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E141E46
+P 7250 2600
+F 0 "C?" H 7365 2646 50  0000 L CNN
+F 1 "10u" H 7365 2555 50  0000 L CNN
+F 2 "" H 7288 2450 50  0001 C CNN
+F 3 "~" H 7250 2600 50  0001 C CNN
+	1    7250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E141E4C
+P 6500 2350
+F 0 "R?" H 6570 2396 50  0000 L CNN
+F 1 "100k" H 6570 2305 50  0000 L CNN
+F 2 "" V 6430 2350 50  0001 C CNN
+F 3 "~" H 6500 2350 50  0001 C CNN
+	1    6500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E141E52
+P 6500 2850
+F 0 "R?" H 6570 2896 50  0000 L CNN
+F 1 "100k" H 6570 2805 50  0000 L CNN
+F 2 "" V 6430 2850 50  0001 C CNN
+F 3 "~" H 6500 2850 50  0001 C CNN
+	1    6500 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E141E58
+P 6850 2350
+F 0 "C?" H 6965 2396 50  0000 L CNN
+F 1 "120p" H 6965 2305 50  0000 L CNN
+F 2 "" H 6888 2200 50  0001 C CNN
+F 3 "~" H 6850 2350 50  0001 C CNN
+	1    6850 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2800 5900 2800
+Wire Wire Line
+	6500 2200 6500 2100
+Wire Wire Line
+	6500 2100 6150 2100
+Wire Wire Line
+	6850 2200 6850 2100
+Wire Wire Line
+	6850 2100 6500 2100
+Connection ~ 6500 2100
+Wire Wire Line
+	6500 2500 6500 2600
+Wire Wire Line
+	6500 2600 5800 2600
+Connection ~ 6500 2600
+Wire Wire Line
+	6500 2600 6500 2700
+Wire Wire Line
+	6500 2600 6850 2600
+Wire Wire Line
+	6850 2600 6850 2500
+Wire Wire Line
+	7650 2750 7650 3200
+Wire Wire Line
+	7650 3200 7250 3200
+Wire Wire Line
+	6500 3200 6500 3000
+Wire Wire Line
+	7250 2750 7250 3200
+Connection ~ 7250 3200
+Wire Wire Line
+	7250 3200 6500 3200
+Wire Wire Line
+	7250 2450 7250 2100
+Wire Wire Line
+	7250 2100 6850 2100
+Connection ~ 6850 2100
+Wire Wire Line
+	7250 2100 7650 2100
+Wire Wire Line
+	7650 2100 7650 2450
+Connection ~ 7250 2100
+Wire Wire Line
+	7650 2100 8000 2100
+Connection ~ 7650 2100
+$Comp
+L Device:R R?
+U 1 1 5E141E79
+P 6150 2850
+F 0 "R?" H 6220 2896 50  0000 L CNN
+F 1 "100k" H 6220 2805 50  0000 L CNN
+F 2 "" V 6080 2850 50  0001 C CNN
+F 3 "~" H 6150 2850 50  0001 C CNN
+	1    6150 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3100 6150 3100
+Wire Wire Line
+	6150 3100 6150 3000
+Wire Wire Line
+	5900 2800 5900 3100
+Wire Wire Line
+	6150 2700 6150 2100
+Connection ~ 6150 2100
+Wire Wire Line
+	6150 2100 5800 2100
+Wire Wire Line
+	4900 2300 4800 2300
+Wire Wire Line
+	4800 2300 4800 2100
+Wire Wire Line
+	4800 2100 4900 2100
+Wire Wire Line
+	4800 2100 4500 2100
+Wire Wire Line
+	4500 2100 4500 2350
+Connection ~ 4800 2100
+Wire Wire Line
+	4500 2100 4200 2100
+Connection ~ 4500 2100
+Wire Wire Line
+	4500 2650 4500 3200
+Wire Wire Line
+	4500 3200 4800 3200
+Wire Wire Line
+	4900 2800 4800 2800
+Wire Wire Line
+	4800 2800 4800 3200
+Connection ~ 4800 3200
+Wire Wire Line
+	4800 3200 6500 3200
+Connection ~ 6500 3200
+Text HLabel 3950 1600 2    50   Output ~ 0
+3.3V
+Text HLabel 8000 2100 2    50   Output ~ 0
+1.2V
+Text Notes 6800 3450 0    50   ~ 0
+TODO: determine how much of this output capacitance is\nneeded and adjust BOM
+Text HLabel 3000 1500 0    50   Input ~ 0
+3.3V_M.2
+$Comp
+L Device:R R?
+U 1 1 5E144877
+P 3250 1500
+F 0 "R?" V 3150 1500 50  0000 C CNN
+F 1 "0" V 3250 1500 50  0000 C CNN
+F 2 "" V 3180 1500 50  0001 C CNN
+F 3 "~" H 3250 1500 50  0001 C CNN
+	1    3250 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E144C04
+P 3250 1700
+F 0 "R?" V 3150 1700 50  0000 C CNN
+F 1 "0" V 3250 1700 50  0000 C CNN
+F 2 "" V 3180 1700 50  0001 C CNN
+F 3 "~" H 3250 1700 50  0001 C CNN
+F 4 "DNP" V 3350 1700 50  0000 C CNN "Note"
+	1    3250 1700
+	0    1    1    0   
+$EndComp
+Text Label 3750 1600 0    50   ~ 0
+3.3V
+Wire Wire Line
+	3950 1600 3500 1600
+Wire Wire Line
+	3500 1600 3500 1500
+Wire Wire Line
+	3500 1500 3400 1500
+Wire Wire Line
+	3400 1700 3500 1700
+Wire Wire Line
+	3500 1700 3500 1600
+Connection ~ 3500 1600
+Wire Wire Line
+	3100 1500 3000 1500
+Wire Wire Line
+	3100 1700 3000 1700
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E149EF0
+P 3000 1700
+F 0 "TP?" V 3000 2000 50  0000 C CNN
+F 1 "3.3V_EXT" V 2900 1900 50  0000 C CNN
+F 2 "" H 3200 1700 50  0001 C CNN
+F 3 "~" H 3200 1700 50  0001 C CNN
+	1    3000 1700
+	0    -1   -1   0   
+$EndComp
+Text Label 4200 2100 0    50   ~ 0
+3.3V
+$EndSCHEMATC

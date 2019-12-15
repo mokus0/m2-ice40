@@ -1,0 +1,166 @@
+EESchema Schematic File Version 4
+LIBS:m2-ice40-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L m2:MAX6621 U?
+U 1 1 5E1941AA
+P 4600 3600
+F 0 "U?" H 5000 3765 50  0000 C CNN
+F 1 "MAX6621" H 5000 3674 50  0000 C CNN
+F 2 "" H 4600 3600 50  0001 C CNN
+F 3 "" H 4600 3600 50  0001 C CNN
+	1    4600 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4200 4400 4200
+Wire Wire Line
+	4400 4200 4400 4300
+Wire Wire Line
+	4400 4300 4500 4300
+Wire Wire Line
+	4400 4300 4400 4600
+Wire Wire Line
+	4400 4600 4850 4600
+Connection ~ 4400 4300
+Wire Wire Line
+	4400 4600 4400 4700
+Connection ~ 4400 4600
+$Comp
+L power:GND #PWR?
+U 1 1 5E1949A9
+P 4400 4700
+F 0 "#PWR?" H 4400 4450 50  0001 C CNN
+F 1 "GND" H 4405 4527 50  0000 C CNN
+F 2 "" H 4400 4700 50  0001 C CNN
+F 3 "" H 4400 4700 50  0001 C CNN
+	1    4400 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4300 5600 4300
+Wire Wire Line
+	5600 4300 5600 4600
+Wire Wire Line
+	5600 4600 5150 4600
+$Comp
+L Device:C C?
+U 1 1 5E19578C
+P 5600 4050
+F 0 "C?" H 5715 4096 50  0000 L CNN
+F 1 "0.1u" H 5715 4005 50  0000 L CNN
+F 2 "" H 5638 3900 50  0001 C CNN
+F 3 "~" H 5600 4050 50  0001 C CNN
+	1    5600 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3900 5600 3700
+Wire Wire Line
+	5600 3700 5500 3700
+Wire Wire Line
+	5600 4200 5600 4300
+Connection ~ 5600 4300
+Wire Wire Line
+	5600 3700 6150 3700
+Connection ~ 5600 3700
+Wire Wire Line
+	6150 3800 5500 3800
+Wire Wire Line
+	5600 4300 6150 4300
+Text HLabel 6150 3700 2    50   BiDi ~ 0
+PECI
+Text HLabel 6150 3800 2    50   Input ~ 0
+PECI_VREF
+Text HLabel 6150 4300 2    50   Input ~ 0
+PECI_GND
+$Comp
+L Device:C C?
+U 1 1 5E196A84
+P 4000 4350
+F 0 "C?" H 4115 4396 50  0000 L CNN
+F 1 "0.1u" H 4115 4305 50  0000 L CNN
+F 2 "" H 4038 4200 50  0001 C CNN
+F 3 "~" H 4000 4350 50  0001 C CNN
+	1    4000 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4600 4000 4600
+Wire Wire Line
+	4000 4600 4000 4500
+Wire Wire Line
+	4000 3700 4500 3700
+Wire Wire Line
+	4000 3700 4000 4200
+Text HLabel 3800 3700 0    50   Input ~ 0
+3.3V
+Wire Wire Line
+	4000 3700 3900 3700
+Connection ~ 4000 3700
+Text HLabel 3800 3800 0    50   BiDi ~ 0
+SDA
+Text HLabel 3800 3900 0    50   BiDi ~ 0
+SCL
+Text HLabel 3800 4100 0    50   BiDi ~ 0
+ALERT#
+Text HLabel 3800 4000 0    50   Input ~ 0
+RESET#
+Wire Wire Line
+	4500 4100 3800 4100
+Wire Wire Line
+	3800 3900 4500 3900
+Wire Wire Line
+	4500 3800 3800 3800
+Wire Wire Line
+	3800 4000 4400 4000
+$Comp
+L Device:R R?
+U 1 1 5E194AD2
+P 5000 4600
+F 0 "R?" V 4900 4600 50  0000 C CNN
+F 1 "0" V 5000 4600 50  0000 C CNN
+F 2 "" V 4930 4600 50  0001 C CNN
+F 3 "~" H 5000 4600 50  0001 C CNN
+	1    5000 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E19B2FB
+P 4150 3600
+F 0 "R?" V 4050 3600 50  0000 C CNN
+F 1 "10k" V 4150 3600 50  0000 C CNN
+F 2 "" V 4080 3600 50  0001 C CNN
+F 3 "~" H 4150 3600 50  0001 C CNN
+	1    4150 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 3600 4400 3600
+Wire Wire Line
+	4400 3600 4400 4000
+Connection ~ 4400 4000
+Wire Wire Line
+	4400 4000 4500 4000
+Wire Wire Line
+	4000 3600 3900 3600
+Wire Wire Line
+	3900 3600 3900 3700
+Connection ~ 3900 3700
+Wire Wire Line
+	3900 3700 3800 3700
+$EndSCHEMATC

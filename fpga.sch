@@ -1,0 +1,319 @@
+EESchema Schematic File Version 4
+LIBS:m2-ice40-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L FPGA_Lattice:ICE40HX1K-TQ144 U?
+U 1 1 5E13ADC3
+P 2650 2750
+F 0 "U?" H 2300 4050 50  0000 L CNN
+F 1 "ICE40HX1K-TQ144" H 2300 1450 50  0000 L CNN
+F 2 "Package_QFP:TQFP-144_20x20mm_P0.5mm" H 2650 1300 50  0001 C CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40" H 1800 4150 50  0001 C CNN
+	1    2650 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L FPGA_Lattice:ICE40HX1K-TQ144 U?
+U 2 1 5E142A3F
+P 4850 2850
+F 0 "U?" H 4500 4250 50  0000 L CNN
+F 1 "ICE40HX1K-TQ144" H 4500 1450 50  0000 L CNN
+F 2 "Package_QFP:TQFP-144_20x20mm_P0.5mm" H 4850 1400 50  0001 C CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40" H 4000 4250 50  0001 C CNN
+	2    4850 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L FPGA_Lattice:ICE40HX1K-TQ144 U?
+U 3 1 5E145C74
+P 6850 2650
+F 0 "U?" H 6500 3850 50  0000 L CNN
+F 1 "ICE40HX1K-TQ144" H 6500 1450 50  0000 L CNN
+F 2 "Package_QFP:TQFP-144_20x20mm_P0.5mm" H 6850 1200 50  0001 C CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40" H 6000 4050 50  0001 C CNN
+	3    6850 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L FPGA_Lattice:ICE40HX1K-TQ144 U?
+U 4 1 5E14AAA8
+P 8850 2850
+F 0 "U?" H 8500 4250 50  0000 L CNN
+F 1 "ICE40HX1K-TQ144" H 8500 1450 50  0000 L CNN
+F 2 "Package_QFP:TQFP-144_20x20mm_P0.5mm" H 8850 1400 50  0001 C CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40" H 8000 4250 50  0001 C CNN
+	4    8850 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E121210
+P 3100 1150
+F 0 "C?" H 3215 1196 50  0000 L CNN
+F 1 "0.1u" H 3215 1105 50  0000 L CNN
+F 2 "" H 3138 1000 50  0001 C CNN
+F 3 "~" H 3100 1150 50  0001 C CNN
+	1    3100 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E121216
+P 3500 1150
+F 0 "C?" H 3615 1196 50  0000 L CNN
+F 1 "0.1u" H 3615 1105 50  0000 L CNN
+F 2 "" H 3538 1000 50  0001 C CNN
+F 3 "~" H 3500 1150 50  0001 C CNN
+	1    3500 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1000 3500 900 
+Wire Wire Line
+	3500 900  3100 900 
+Wire Wire Line
+	2650 900  2650 1350
+Wire Wire Line
+	3100 1000 3100 900 
+Connection ~ 3100 900 
+Wire Wire Line
+	3100 900  2650 900 
+Wire Wire Line
+	3100 1300 3100 1400
+Wire Wire Line
+	3100 1400 3500 1400
+Wire Wire Line
+	3500 1400 3500 1300
+Wire Wire Line
+	3500 1500 3500 1400
+$Comp
+L power:GND #PWR?
+U 1 1 5E121226
+P 3500 1500
+F 0 "#PWR?" H 3500 1250 50  0001 C CNN
+F 1 "GND" H 3505 1327 50  0000 C CNN
+F 2 "" H 3500 1500 50  0001 C CNN
+F 3 "" H 3500 1500 50  0001 C CNN
+	1    3500 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 900  3500 900 
+Connection ~ 3500 900 
+Text HLabel 3700 900  2    50   Input ~ 0
+VCCIO_0
+Connection ~ 3500 1400
+$Comp
+L Device:C C?
+U 1 1 5E122A60
+P 5300 1150
+F 0 "C?" H 5415 1196 50  0000 L CNN
+F 1 "0.1u" H 5415 1105 50  0000 L CNN
+F 2 "" H 5338 1000 50  0001 C CNN
+F 3 "~" H 5300 1150 50  0001 C CNN
+	1    5300 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E122A66
+P 5700 1150
+F 0 "C?" H 5815 1196 50  0000 L CNN
+F 1 "0.1u" H 5815 1105 50  0000 L CNN
+F 2 "" H 5738 1000 50  0001 C CNN
+F 3 "~" H 5700 1150 50  0001 C CNN
+	1    5700 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1000 5700 900 
+Wire Wire Line
+	5700 900  5300 900 
+Wire Wire Line
+	4850 900  4850 1350
+Wire Wire Line
+	5300 1000 5300 900 
+Connection ~ 5300 900 
+Wire Wire Line
+	5300 900  4850 900 
+Wire Wire Line
+	5300 1300 5300 1400
+Wire Wire Line
+	5300 1400 5700 1400
+Wire Wire Line
+	5700 1400 5700 1300
+Wire Wire Line
+	5700 1500 5700 1400
+$Comp
+L power:GND #PWR?
+U 1 1 5E122A76
+P 5700 1500
+F 0 "#PWR?" H 5700 1250 50  0001 C CNN
+F 1 "GND" H 5705 1327 50  0000 C CNN
+F 2 "" H 5700 1500 50  0001 C CNN
+F 3 "" H 5700 1500 50  0001 C CNN
+	1    5700 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 900  5700 900 
+Connection ~ 5700 900 
+Text HLabel 5900 900  2    50   Input ~ 0
+VCCIO_1
+Connection ~ 5700 1400
+$Comp
+L Device:C C?
+U 1 1 5E1239E6
+P 7300 1150
+F 0 "C?" H 7415 1196 50  0000 L CNN
+F 1 "0.1u" H 7415 1105 50  0000 L CNN
+F 2 "" H 7338 1000 50  0001 C CNN
+F 3 "~" H 7300 1150 50  0001 C CNN
+	1    7300 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E1239EC
+P 7700 1150
+F 0 "C?" H 7815 1196 50  0000 L CNN
+F 1 "0.1u" H 7815 1105 50  0000 L CNN
+F 2 "" H 7738 1000 50  0001 C CNN
+F 3 "~" H 7700 1150 50  0001 C CNN
+	1    7700 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 1000 7700 900 
+Wire Wire Line
+	7700 900  7300 900 
+Wire Wire Line
+	6850 900  6850 1350
+Wire Wire Line
+	7300 1000 7300 900 
+Connection ~ 7300 900 
+Wire Wire Line
+	7300 900  6850 900 
+Wire Wire Line
+	7300 1300 7300 1400
+Wire Wire Line
+	7300 1400 7700 1400
+Wire Wire Line
+	7700 1400 7700 1300
+Wire Wire Line
+	7700 1500 7700 1400
+$Comp
+L power:GND #PWR?
+U 1 1 5E1239FC
+P 7700 1500
+F 0 "#PWR?" H 7700 1250 50  0001 C CNN
+F 1 "GND" H 7705 1327 50  0000 C CNN
+F 2 "" H 7700 1500 50  0001 C CNN
+F 3 "" H 7700 1500 50  0001 C CNN
+	1    7700 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 900  7700 900 
+Connection ~ 7700 900 
+Text HLabel 7900 900  2    50   Input ~ 0
+VCCIO_2
+Connection ~ 7700 1400
+$Comp
+L Device:C C?
+U 1 1 5E126152
+P 9300 1150
+F 0 "C?" H 9415 1196 50  0000 L CNN
+F 1 "0.1u" H 9415 1105 50  0000 L CNN
+F 2 "" H 9338 1000 50  0001 C CNN
+F 3 "~" H 9300 1150 50  0001 C CNN
+	1    9300 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E126158
+P 9700 1150
+F 0 "C?" H 9815 1196 50  0000 L CNN
+F 1 "0.1u" H 9815 1105 50  0000 L CNN
+F 2 "" H 9738 1000 50  0001 C CNN
+F 3 "~" H 9700 1150 50  0001 C CNN
+	1    9700 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 1000 9700 900 
+Wire Wire Line
+	9700 900  9300 900 
+Wire Wire Line
+	8850 900  8850 1350
+Wire Wire Line
+	9300 1000 9300 900 
+Connection ~ 9300 900 
+Wire Wire Line
+	9300 900  8850 900 
+Wire Wire Line
+	9300 1300 9300 1400
+Wire Wire Line
+	9300 1400 9700 1400
+Wire Wire Line
+	9700 1400 9700 1300
+Wire Wire Line
+	9700 1500 9700 1400
+$Comp
+L power:GND #PWR?
+U 1 1 5E126168
+P 9700 1500
+F 0 "#PWR?" H 9700 1250 50  0001 C CNN
+F 1 "GND" H 9705 1327 50  0000 C CNN
+F 2 "" H 9700 1500 50  0001 C CNN
+F 3 "" H 9700 1500 50  0001 C CNN
+	1    9700 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 900  9700 900 
+Connection ~ 9700 900 
+Text HLabel 9900 900  2    50   Input ~ 0
+VCCIO_3
+Connection ~ 9700 1400
+Text HLabel 2100 5300 0    50   Input ~ 0
+RESET#
+Text HLabel 2100 5400 0    50   Input ~ 0
+DISABLE#
+Text HLabel 2100 5500 0    50   Input ~ 0
+POWER_OFF#
+Text HLabel 2100 5700 0    50   Input ~ 0
+1.8v_OD_SIM_DETECT
+Text HLabel 2100 5900 0    50   Output ~ 0
+UIM_PWR
+Text HLabel 2100 6000 0    50   Output ~ 0
+UIM_RESET
+Text HLabel 2100 6100 0    50   Output ~ 0
+UIM_CLK
+Text HLabel 2100 6200 0    50   Output ~ 0
+UIM_DATA
+Text HLabel 1950 6800 0    50   Output ~ 0
+PECI_RESET#
+Text HLabel 1950 6900 0    50   BiDi ~ 0
+PECI_SCL
+Text HLabel 1950 7000 0    50   BiDi ~ 0
+PECI_SDA
+Text HLabel 1950 7100 0    50   Input ~ 0
+PECI_ALERT#
+Text Notes 2100 6950 0    50   ~ 0
+TODO: SMBUS pull-ups
+$EndSCHEMATC
