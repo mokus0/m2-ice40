@@ -1,0 +1,3 @@
+[submodule "kicad-m2ngff"]
+	path = kicad-m2ngff
+	url = https://github.com/realteck-ky/kicad-m2ngff
