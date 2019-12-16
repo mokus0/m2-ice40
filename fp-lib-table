@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name m2ngff)(type KiCad)(uri ${KIPRJMOD}/kicad-m2ngff/m2ngff.pretty)(options "")(descr ""))
+  (lib (name m2-ice40)(type KiCad)(uri ${KIPRJMOD}/m2-ice40.pretty)(options "")(descr ""))
 )
