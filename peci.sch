@@ -81,9 +81,9 @@ Wire Wire Line
 	6150 3800 5500 3800
 Wire Wire Line
 	5600 4300 6150 4300
-Text HLabel 6150 3700 2    50   BiDi ~ 0
+Text HLabel 6150 3800 2    50   BiDi ~ 0
 PECI
-Text HLabel 6150 3800 2    50   Input ~ 0
+Text HLabel 6150 3700 2    50   Input ~ 0
 PECI_VREF
 Text HLabel 6150 4300 2    50   Input ~ 0
 PECI_GND
