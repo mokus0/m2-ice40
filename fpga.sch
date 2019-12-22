@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 7 7
 Title ""
 Date ""
 Rev ""
@@ -290,30 +290,972 @@ Connection ~ 9700 900
 Text HLabel 9900 900  2    50   Input ~ 0
 VCCIO_3
 Connection ~ 9700 1400
-Text HLabel 2100 5300 0    50   Input ~ 0
+Text HLabel 2150 3550 0    50   Input ~ 0
 RESET#
-Text HLabel 2100 5400 0    50   Input ~ 0
+Text HLabel 2150 2550 0    50   Input ~ 0
 DISABLE#
-Text HLabel 2100 5500 0    50   Input ~ 0
+Text HLabel 2150 2450 0    50   Input ~ 0
 POWER_OFF#
-Text HLabel 2100 5700 0    50   Input ~ 0
+Text HLabel 2150 3450 0    50   Input ~ 0
 1.8v_OD_SIM_DETECT
-Text HLabel 2100 5900 0    50   Output ~ 0
+Text HLabel 2150 3350 0    50   Output ~ 0
 UIM_PWR
-Text HLabel 2100 6000 0    50   Output ~ 0
+Text HLabel 2150 3050 0    50   Output ~ 0
 UIM_RESET
-Text HLabel 2100 6100 0    50   Output ~ 0
+Text HLabel 2150 3150 0    50   Output ~ 0
 UIM_CLK
-Text HLabel 2100 6200 0    50   Output ~ 0
+Text HLabel 2150 3250 0    50   Output ~ 0
 UIM_DATA
-Text HLabel 1950 6800 0    50   Output ~ 0
+Text HLabel 5950 1950 0    50   Output ~ 0
 PECI_RESET#
-Text HLabel 1950 6900 0    50   BiDi ~ 0
+Text HLabel 5950 2150 0    50   BiDi ~ 0
 PECI_SCL
-Text HLabel 1950 7000 0    50   BiDi ~ 0
+Text HLabel 5950 2050 0    50   BiDi ~ 0
 PECI_SDA
-Text HLabel 1950 7100 0    50   Input ~ 0
+Text HLabel 5950 1850 0    50   Input ~ 0
 PECI_ALERT#
-Text Notes 2100 6950 0    50   ~ 0
-TODO: SMBUS pull-ups
+Text Notes 950  6150 0    50   ~ 0
+TODO: determine appropriate pull-up values
+Text HLabel 4350 3250 0    50   BiDi ~ 0
+ACBUS0
+Text HLabel 4350 3150 0    50   BiDi ~ 0
+ACBUS1
+Text HLabel 4350 3050 0    50   BiDi ~ 0
+ACBUS2
+Text HLabel 4350 2750 0    50   BiDi ~ 0
+ACBUS3
+Text HLabel 4350 2650 0    50   BiDi ~ 0
+ACBUS4
+Text HLabel 4350 2550 0    50   BiDi ~ 0
+ACBUS5
+Text HLabel 4350 2450 0    50   BiDi ~ 0
+ACBUS6
+Text HLabel 4350 2350 0    50   BiDi ~ 0
+ACBUS7
+Text HLabel 2150 2850 0    50   Input ~ 0
+ICE_CLK
+Text HLabel 4350 3350 0    50   BiDi ~ 0
+ADBUS7
+Text HLabel 4350 3450 0    50   Output ~ 0
+FTDI_DCD
+Text HLabel 4350 3550 0    50   Output ~ 0
+FTDI_DSR
+Text HLabel 4350 3650 0    50   Input ~ 0
+FTDI_DTR
+Text HLabel 4350 3750 0    50   Output ~ 0
+FTDI_CTS
+Text HLabel 4350 3850 0    50   Input ~ 0
+FTDI_RTS
+Text HLabel 4350 3950 0    50   Output ~ 0
+FTDI_RX__ICE_TX
+Text HLabel 4350 4050 0    50   Input ~ 0
+FTDI_TX__ICE_RX
+Wire Wire Line
+	6350 1850 5950 1850
+Wire Wire Line
+	6350 1950 5950 1950
+Wire Wire Line
+	6350 2050 5950 2050
+Wire Wire Line
+	6350 2150 5950 2150
+$Comp
+L Device:R R703
+U 1 1 5E1D9C3C
+P 1600 5750
+F 0 "R703" V 1550 6000 50  0000 C CNN
+F 1 "2.2k" V 1600 5750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1530 5750 50  0001 C CNN
+F 3 "~" H 1600 5750 50  0001 C CNN
+	1    1600 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R704
+U 1 1 5E1D9E93
+P 1600 5850
+F 0 "R704" V 1550 6100 50  0000 C CNN
+F 1 "2.2k" V 1600 5850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1530 5850 50  0001 C CNN
+F 3 "~" H 1600 5850 50  0001 C CNN
+	1    1600 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R705
+U 1 1 5E1D9F81
+P 1600 5950
+F 0 "R705" V 1550 6200 50  0000 C CNN
+F 1 "2.2k" V 1600 5950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1530 5950 50  0001 C CNN
+F 3 "~" H 1600 5950 50  0001 C CNN
+	1    1600 5950
+	0    1    1    0   
+$EndComp
+Text Label 6050 1850 0    50   ~ 0
+ALERT
+Text Label 6050 2050 0    50   ~ 0
+SDA
+Text Label 6050 2150 0    50   ~ 0
+SCL
+Text Label 1150 5750 0    50   ~ 0
+ALERT
+Text Label 1150 5850 0    50   ~ 0
+SDA
+Text Label 1150 5950 0    50   ~ 0
+SCL
+Text Label 7000 900  0    50   ~ 0
+SMBUS_VCC
+Text Label 2500 5750 2    50   ~ 0
+SMBUS_VCC
+Wire Wire Line
+	2500 5750 2000 5750
+Wire Wire Line
+	2000 5750 2000 5850
+Wire Wire Line
+	2000 5950 1750 5950
+Wire Wire Line
+	1750 5850 2000 5850
+Connection ~ 2000 5850
+Wire Wire Line
+	2000 5850 2000 5950
+Wire Wire Line
+	2000 5750 1750 5750
+Connection ~ 2000 5750
+Wire Wire Line
+	1150 5750 1450 5750
+Wire Wire Line
+	1450 5850 1150 5850
+Wire Wire Line
+	1150 5950 1450 5950
+$Comp
+L Connector:TestPoint TP701
+U 1 1 5E213DBD
+P 2150 1650
+F 0 "TP701" V 2150 1900 50  0000 C CNN
+F 1 "TestPoint" V 2254 1722 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 2350 1650 50  0001 C CNN
+F 3 "~" H 2350 1650 50  0001 C CNN
+	1    2150 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP702
+U 1 1 5E215AEB
+P 2150 1750
+F 0 "TP702" V 2150 2000 50  0000 C CNN
+F 1 "TestPoint" V 2254 1822 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 2350 1750 50  0001 C CNN
+F 3 "~" H 2350 1750 50  0001 C CNN
+	1    2150 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP703
+U 1 1 5E215DFB
+P 2150 1850
+F 0 "TP703" V 2150 2100 50  0000 C CNN
+F 1 "TestPoint" V 2254 1922 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 2350 1850 50  0001 C CNN
+F 3 "~" H 2350 1850 50  0001 C CNN
+	1    2150 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP704
+U 1 1 5E216115
+P 2150 1950
+F 0 "TP704" V 2150 2200 50  0000 C CNN
+F 1 "TestPoint" V 2254 2022 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 2350 1950 50  0001 C CNN
+F 3 "~" H 2350 1950 50  0001 C CNN
+	1    2150 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP705
+U 1 1 5E216439
+P 2150 2050
+F 0 "TP705" V 2150 2300 50  0000 C CNN
+F 1 "TestPoint" V 2254 2122 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 2350 2050 50  0001 C CNN
+F 3 "~" H 2350 2050 50  0001 C CNN
+	1    2150 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP706
+U 1 1 5E216767
+P 2150 2150
+F 0 "TP706" V 2150 2400 50  0000 C CNN
+F 1 "TestPoint" V 2254 2222 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 2350 2150 50  0001 C CNN
+F 3 "~" H 2350 2150 50  0001 C CNN
+	1    2150 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP707
+U 1 1 5E216A9F
+P 2150 2250
+F 0 "TP707" V 2150 2500 50  0000 C CNN
+F 1 "TestPoint" V 2254 2322 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 2350 2250 50  0001 C CNN
+F 3 "~" H 2350 2250 50  0001 C CNN
+	1    2150 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP712
+U 1 1 5E21B502
+P 2150 3650
+F 0 "TP712" V 2150 3900 50  0000 C CNN
+F 1 "TestPoint" V 2254 3722 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 2350 3650 50  0001 C CNN
+F 3 "~" H 2350 3650 50  0001 C CNN
+	1    2150 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP713
+U 1 1 5E21B508
+P 2150 3750
+F 0 "TP713" V 2150 4000 50  0000 C CNN
+F 1 "TestPoint" V 2254 3822 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 2350 3750 50  0001 C CNN
+F 3 "~" H 2350 3750 50  0001 C CNN
+	1    2150 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP714
+U 1 1 5E21B50E
+P 2150 3850
+F 0 "TP714" V 2150 4100 50  0000 C CNN
+F 1 "TestPoint" V 2254 3922 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 2350 3850 50  0001 C CNN
+F 3 "~" H 2350 3850 50  0001 C CNN
+	1    2150 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP711
+U 1 1 5E21B514
+P 2150 2950
+F 0 "TP711" V 2150 3200 50  0000 C CNN
+F 1 "TestPoint" V 2254 3022 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 2350 2950 50  0001 C CNN
+F 3 "~" H 2350 2950 50  0001 C CNN
+	1    2150 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP708
+U 1 1 5E21B51A
+P 2150 2350
+F 0 "TP708" V 2150 2600 50  0000 C CNN
+F 1 "TestPoint" V 2254 2422 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 2350 2350 50  0001 C CNN
+F 3 "~" H 2350 2350 50  0001 C CNN
+	1    2150 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP709
+U 1 1 5E21B520
+P 2150 2650
+F 0 "TP709" V 2150 2900 50  0000 C CNN
+F 1 "TestPoint" V 2254 2722 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 2350 2650 50  0001 C CNN
+F 3 "~" H 2350 2650 50  0001 C CNN
+	1    2150 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP710
+U 1 1 5E21B526
+P 2150 2750
+F 0 "TP710" V 2150 3000 50  0000 C CNN
+F 1 "TestPoint" V 2254 2822 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 2350 2750 50  0001 C CNN
+F 3 "~" H 2350 2750 50  0001 C CNN
+	1    2150 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP715
+U 1 1 5E2353DA
+P 4350 1650
+F 0 "TP715" V 4350 1900 50  0000 C CNN
+F 1 "TestPoint" V 4454 1722 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 4550 1650 50  0001 C CNN
+F 3 "~" H 4550 1650 50  0001 C CNN
+	1    4350 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP716
+U 1 1 5E2353E0
+P 4350 1750
+F 0 "TP716" V 4350 2000 50  0000 C CNN
+F 1 "TestPoint" V 4454 1822 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 4550 1750 50  0001 C CNN
+F 3 "~" H 4550 1750 50  0001 C CNN
+	1    4350 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP717
+U 1 1 5E2353E6
+P 4350 1850
+F 0 "TP717" V 4350 2100 50  0000 C CNN
+F 1 "TestPoint" V 4454 1922 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 4550 1850 50  0001 C CNN
+F 3 "~" H 4550 1850 50  0001 C CNN
+	1    4350 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP718
+U 1 1 5E2353EC
+P 4350 1950
+F 0 "TP718" V 4350 2200 50  0000 C CNN
+F 1 "TestPoint" V 4454 2022 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 4550 1950 50  0001 C CNN
+F 3 "~" H 4550 1950 50  0001 C CNN
+	1    4350 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP719
+U 1 1 5E2353F2
+P 4350 2050
+F 0 "TP719" V 4350 2300 50  0000 C CNN
+F 1 "TestPoint" V 4454 2122 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 4550 2050 50  0001 C CNN
+F 3 "~" H 4550 2050 50  0001 C CNN
+	1    4350 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP720
+U 1 1 5E2353F8
+P 4350 2150
+F 0 "TP720" V 4350 2400 50  0000 C CNN
+F 1 "TestPoint" V 4454 2222 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 4550 2150 50  0001 C CNN
+F 3 "~" H 4550 2150 50  0001 C CNN
+	1    4350 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP721
+U 1 1 5E2353FE
+P 4350 2250
+F 0 "TP721" V 4350 2500 50  0000 C CNN
+F 1 "TestPoint" V 4454 2322 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 4550 2250 50  0001 C CNN
+F 3 "~" H 4550 2250 50  0001 C CNN
+	1    4350 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP722
+U 1 1 5E23645B
+P 4350 2850
+F 0 "TP722" V 4350 3100 50  0000 C CNN
+F 1 "TestPoint" V 4454 2922 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 4550 2850 50  0001 C CNN
+F 3 "~" H 4550 2850 50  0001 C CNN
+	1    4350 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP723
+U 1 1 5E236461
+P 4350 2950
+F 0 "TP723" V 4350 3200 50  0000 C CNN
+F 1 "TestPoint" V 4454 3022 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 4550 2950 50  0001 C CNN
+F 3 "~" H 4550 2950 50  0001 C CNN
+	1    4350 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP725
+U 1 1 5E245E0F
+P 6350 2250
+F 0 "TP725" V 6350 2500 50  0000 C CNN
+F 1 "TestPoint" V 6454 2322 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 6550 2250 50  0001 C CNN
+F 3 "~" H 6550 2250 50  0001 C CNN
+	1    6350 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP726
+U 1 1 5E245E15
+P 6350 2350
+F 0 "TP726" V 6350 2600 50  0000 C CNN
+F 1 "TestPoint" V 6454 2422 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 6550 2350 50  0001 C CNN
+F 3 "~" H 6550 2350 50  0001 C CNN
+	1    6350 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP727
+U 1 1 5E245E1B
+P 6350 2450
+F 0 "TP727" V 6350 2700 50  0000 C CNN
+F 1 "TestPoint" V 6454 2522 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 6550 2450 50  0001 C CNN
+F 3 "~" H 6550 2450 50  0001 C CNN
+	1    6350 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP728
+U 1 1 5E245E21
+P 6350 2550
+F 0 "TP728" V 6350 2800 50  0000 C CNN
+F 1 "TestPoint" V 6454 2622 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 6550 2550 50  0001 C CNN
+F 3 "~" H 6550 2550 50  0001 C CNN
+	1    6350 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP729
+U 1 1 5E245E27
+P 6350 2650
+F 0 "TP729" V 6350 2900 50  0000 C CNN
+F 1 "TestPoint" V 6454 2722 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 6550 2650 50  0001 C CNN
+F 3 "~" H 6550 2650 50  0001 C CNN
+	1    6350 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP730
+U 1 1 5E245E2D
+P 6350 2750
+F 0 "TP730" V 6350 3000 50  0000 C CNN
+F 1 "TestPoint" V 6454 2822 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 6550 2750 50  0001 C CNN
+F 3 "~" H 6550 2750 50  0001 C CNN
+	1    6350 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP731
+U 1 1 5E245E33
+P 6350 2850
+F 0 "TP731" V 6350 3100 50  0000 C CNN
+F 1 "TestPoint" V 6454 2922 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 6550 2850 50  0001 C CNN
+F 3 "~" H 6550 2850 50  0001 C CNN
+	1    6350 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP732
+U 1 1 5E24795A
+P 6350 2950
+F 0 "TP732" V 6350 3200 50  0000 C CNN
+F 1 "TestPoint" V 6454 3022 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 6550 2950 50  0001 C CNN
+F 3 "~" H 6550 2950 50  0001 C CNN
+	1    6350 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP733
+U 1 1 5E247960
+P 6350 3050
+F 0 "TP733" V 6350 3300 50  0000 C CNN
+F 1 "TestPoint" V 6454 3122 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 6550 3050 50  0001 C CNN
+F 3 "~" H 6550 3050 50  0001 C CNN
+	1    6350 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP734
+U 1 1 5E247966
+P 6350 3150
+F 0 "TP734" V 6350 3400 50  0000 C CNN
+F 1 "TestPoint" V 6454 3222 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 6550 3150 50  0001 C CNN
+F 3 "~" H 6550 3150 50  0001 C CNN
+	1    6350 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP735
+U 1 1 5E24796C
+P 6350 3250
+F 0 "TP735" V 6350 3500 50  0000 C CNN
+F 1 "TestPoint" V 6454 3322 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 6550 3250 50  0001 C CNN
+F 3 "~" H 6550 3250 50  0001 C CNN
+	1    6350 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP736
+U 1 1 5E247972
+P 6350 3350
+F 0 "TP736" V 6350 3600 50  0000 C CNN
+F 1 "TestPoint" V 6454 3422 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 6550 3350 50  0001 C CNN
+F 3 "~" H 6550 3350 50  0001 C CNN
+	1    6350 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP737
+U 1 1 5E247978
+P 6350 3450
+F 0 "TP737" V 6350 3700 50  0000 C CNN
+F 1 "TestPoint" V 6454 3522 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 6550 3450 50  0001 C CNN
+F 3 "~" H 6550 3450 50  0001 C CNN
+	1    6350 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP738
+U 1 1 5E24797E
+P 6350 3550
+F 0 "TP738" V 6350 3800 50  0000 C CNN
+F 1 "TestPoint" V 6454 3622 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 6550 3550 50  0001 C CNN
+F 3 "~" H 6550 3550 50  0001 C CNN
+	1    6350 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP739
+U 1 1 5E249120
+P 6350 3650
+F 0 "TP739" V 6350 3900 50  0000 C CNN
+F 1 "TestPoint" V 6454 3722 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 6550 3650 50  0001 C CNN
+F 3 "~" H 6550 3650 50  0001 C CNN
+	1    6350 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP724
+U 1 1 5E249126
+P 6350 1750
+F 0 "TP724" V 6350 2000 50  0000 C CNN
+F 1 "TestPoint" V 6454 1822 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 6550 1750 50  0001 C CNN
+F 3 "~" H 6550 1750 50  0001 C CNN
+	1    6350 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP740
+U 1 1 5E25F69C
+P 8350 1750
+F 0 "TP740" V 8350 2000 50  0000 C CNN
+F 1 "TestPoint" V 8454 1822 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 1750 50  0001 C CNN
+F 3 "~" H 8550 1750 50  0001 C CNN
+	1    8350 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP741
+U 1 1 5E25F6A2
+P 8350 1850
+F 0 "TP741" V 8350 2100 50  0000 C CNN
+F 1 "TestPoint" V 8454 1922 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 1850 50  0001 C CNN
+F 3 "~" H 8550 1850 50  0001 C CNN
+	1    8350 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP742
+U 1 1 5E25F6A8
+P 8350 1950
+F 0 "TP742" V 8350 2200 50  0000 C CNN
+F 1 "TestPoint" V 8454 2022 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 1950 50  0001 C CNN
+F 3 "~" H 8550 1950 50  0001 C CNN
+	1    8350 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP743
+U 1 1 5E25F6AE
+P 8350 2050
+F 0 "TP743" V 8350 2300 50  0000 C CNN
+F 1 "TestPoint" V 8454 2122 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 2050 50  0001 C CNN
+F 3 "~" H 8550 2050 50  0001 C CNN
+	1    8350 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP744
+U 1 1 5E25F6B4
+P 8350 2150
+F 0 "TP744" V 8350 2400 50  0000 C CNN
+F 1 "TestPoint" V 8454 2222 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 2150 50  0001 C CNN
+F 3 "~" H 8550 2150 50  0001 C CNN
+	1    8350 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP745
+U 1 1 5E25F6BA
+P 8350 2250
+F 0 "TP745" V 8350 2500 50  0000 C CNN
+F 1 "TestPoint" V 8454 2322 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 2250 50  0001 C CNN
+F 3 "~" H 8550 2250 50  0001 C CNN
+	1    8350 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP746
+U 1 1 5E25F6C0
+P 8350 2350
+F 0 "TP746" V 8350 2600 50  0000 C CNN
+F 1 "TestPoint" V 8454 2422 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 2350 50  0001 C CNN
+F 3 "~" H 8550 2350 50  0001 C CNN
+	1    8350 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP747
+U 1 1 5E260B68
+P 8350 2450
+F 0 "TP747" V 8350 2700 50  0000 C CNN
+F 1 "TestPoint" V 8454 2522 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 2450 50  0001 C CNN
+F 3 "~" H 8550 2450 50  0001 C CNN
+	1    8350 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP748
+U 1 1 5E260B6E
+P 8350 2550
+F 0 "TP748" V 8350 2800 50  0000 C CNN
+F 1 "TestPoint" V 8454 2622 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 2550 50  0001 C CNN
+F 3 "~" H 8550 2550 50  0001 C CNN
+	1    8350 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP749
+U 1 1 5E260B74
+P 8350 2650
+F 0 "TP749" V 8350 2900 50  0000 C CNN
+F 1 "TestPoint" V 8454 2722 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 2650 50  0001 C CNN
+F 3 "~" H 8550 2650 50  0001 C CNN
+	1    8350 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP750
+U 1 1 5E260B7A
+P 8350 2750
+F 0 "TP750" V 8350 3000 50  0000 C CNN
+F 1 "TestPoint" V 8454 2822 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 2750 50  0001 C CNN
+F 3 "~" H 8550 2750 50  0001 C CNN
+	1    8350 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP751
+U 1 1 5E260B80
+P 8350 2850
+F 0 "TP751" V 8350 3100 50  0000 C CNN
+F 1 "TestPoint" V 8454 2922 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 2850 50  0001 C CNN
+F 3 "~" H 8550 2850 50  0001 C CNN
+	1    8350 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP752
+U 1 1 5E260B86
+P 8350 2950
+F 0 "TP752" V 8350 3200 50  0000 C CNN
+F 1 "TestPoint" V 8454 3022 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 2950 50  0001 C CNN
+F 3 "~" H 8550 2950 50  0001 C CNN
+	1    8350 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP753
+U 1 1 5E260B8C
+P 8350 3050
+F 0 "TP753" V 8350 3300 50  0000 C CNN
+F 1 "TestPoint" V 8454 3122 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 3050 50  0001 C CNN
+F 3 "~" H 8550 3050 50  0001 C CNN
+	1    8350 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP754
+U 1 1 5E2632C9
+P 8350 3150
+F 0 "TP754" V 8350 3400 50  0000 C CNN
+F 1 "TestPoint" V 8454 3222 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 3150 50  0001 C CNN
+F 3 "~" H 8550 3150 50  0001 C CNN
+	1    8350 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP755
+U 1 1 5E2632CF
+P 8350 3250
+F 0 "TP755" V 8350 3500 50  0000 C CNN
+F 1 "TestPoint" V 8454 3322 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 3250 50  0001 C CNN
+F 3 "~" H 8550 3250 50  0001 C CNN
+	1    8350 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP756
+U 1 1 5E2632D5
+P 8350 3350
+F 0 "TP756" V 8350 3600 50  0000 C CNN
+F 1 "TestPoint" V 8454 3422 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 3350 50  0001 C CNN
+F 3 "~" H 8550 3350 50  0001 C CNN
+	1    8350 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP757
+U 1 1 5E2632DB
+P 8350 3450
+F 0 "TP757" V 8350 3700 50  0000 C CNN
+F 1 "TestPoint" V 8454 3522 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 3450 50  0001 C CNN
+F 3 "~" H 8550 3450 50  0001 C CNN
+	1    8350 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP758
+U 1 1 5E2632E1
+P 8350 3550
+F 0 "TP758" V 8350 3800 50  0000 C CNN
+F 1 "TestPoint" V 8454 3622 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 3550 50  0001 C CNN
+F 3 "~" H 8550 3550 50  0001 C CNN
+	1    8350 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP759
+U 1 1 5E2632E7
+P 8350 3650
+F 0 "TP759" V 8350 3900 50  0000 C CNN
+F 1 "TestPoint" V 8454 3722 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 3650 50  0001 C CNN
+F 3 "~" H 8550 3650 50  0001 C CNN
+	1    8350 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP760
+U 1 1 5E2632ED
+P 8350 3750
+F 0 "TP760" V 8350 4000 50  0000 C CNN
+F 1 "TestPoint" V 8454 3822 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 3750 50  0001 C CNN
+F 3 "~" H 8550 3750 50  0001 C CNN
+	1    8350 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP761
+U 1 1 5E265037
+P 8350 3850
+F 0 "TP761" V 8350 4100 50  0000 C CNN
+F 1 "TestPoint" V 8454 3922 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 3850 50  0001 C CNN
+F 3 "~" H 8550 3850 50  0001 C CNN
+	1    8350 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP762
+U 1 1 5E26503D
+P 8350 3950
+F 0 "TP762" V 8350 4200 50  0000 C CNN
+F 1 "TestPoint" V 8454 4022 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 3950 50  0001 C CNN
+F 3 "~" H 8550 3950 50  0001 C CNN
+	1    8350 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP763
+U 1 1 5E265043
+P 8350 4050
+F 0 "TP763" V 8350 4300 50  0000 C CNN
+F 1 "TestPoint" V 8454 4122 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 8550 4050 50  0001 C CNN
+F 3 "~" H 8550 4050 50  0001 C CNN
+	1    8350 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP764
+U 1 1 5E2F2536
+P 1400 6600
+F 0 "TP764" V 1400 6850 50  0000 C CNN
+F 1 "TestPoint" V 1504 6672 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 1600 6600 50  0001 C CNN
+F 3 "~" H 1600 6600 50  0001 C CNN
+	1    1400 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP765
+U 1 1 5E2F54F4
+P 1400 6700
+F 0 "TP765" V 1400 6950 50  0000 C CNN
+F 1 "TestPoint" V 1504 6772 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 1600 6700 50  0001 C CNN
+F 3 "~" H 1600 6700 50  0001 C CNN
+	1    1400 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP766
+U 1 1 5E2F558C
+P 1400 6800
+F 0 "TP766" V 1400 7050 50  0000 C CNN
+F 1 "TestPoint" V 1504 6872 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 1600 6800 50  0001 C CNN
+F 3 "~" H 1600 6800 50  0001 C CNN
+	1    1400 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP767
+U 1 1 5E2F562E
+P 1400 6900
+F 0 "TP767" V 1400 7150 50  0000 C CNN
+F 1 "TestPoint" V 1504 6972 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 1600 6900 50  0001 C CNN
+F 3 "~" H 1600 6900 50  0001 C CNN
+	1    1400 6900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP768
+U 1 1 5E2F56DA
+P 1400 7000
+F 0 "TP768" V 1400 7250 50  0000 C CNN
+F 1 "TestPoint" V 1504 7072 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 1600 7000 50  0001 C CNN
+F 3 "~" H 1600 7000 50  0001 C CNN
+	1    1400 7000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP769
+U 1 1 5E2F5828
+P 1400 7100
+F 0 "TP769" V 1400 7350 50  0000 C CNN
+F 1 "TestPoint" V 1504 7172 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 1600 7100 50  0001 C CNN
+F 3 "~" H 1600 7100 50  0001 C CNN
+	1    1400 7100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP770
+U 1 1 5E2F58E8
+P 1400 7200
+F 0 "TP770" V 1400 7450 50  0000 C CNN
+F 1 "TestPoint" V 1504 7272 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 1600 7200 50  0001 C CNN
+F 3 "~" H 1600 7200 50  0001 C CNN
+	1    1400 7200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP771
+U 1 1 5E2F59B2
+P 1400 7300
+F 0 "TP771" V 1400 7550 50  0000 C CNN
+F 1 "TestPoint" V 1504 7372 50  0001 C CNN
+F 2 "m2-ice40:TestPoint_Pad_0.5x1.5mm" H 1600 7300 50  0001 C CNN
+F 3 "~" H 1600 7300 50  0001 C CNN
+	1    1400 7300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0702
+U 1 1 5E2F5F6D
+P 1500 7400
+F 0 "#PWR0702" H 1500 7150 50  0001 C CNN
+F 1 "GND" H 1505 7227 50  0000 C CNN
+F 2 "" H 1500 7400 50  0001 C CNN
+F 3 "" H 1500 7400 50  0001 C CNN
+	1    1500 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 7400 1500 7300
+Wire Wire Line
+	1500 6600 1400 6600
+Wire Wire Line
+	1400 6700 1500 6700
+Connection ~ 1500 6700
+Wire Wire Line
+	1500 6700 1500 6600
+Wire Wire Line
+	1500 6800 1400 6800
+Connection ~ 1500 6800
+Wire Wire Line
+	1500 6800 1500 6700
+Wire Wire Line
+	1400 6900 1500 6900
+Connection ~ 1500 6900
+Wire Wire Line
+	1500 6900 1500 6800
+Wire Wire Line
+	1500 7000 1400 7000
+Connection ~ 1500 7000
+Wire Wire Line
+	1500 7000 1500 6900
+Wire Wire Line
+	1400 7100 1500 7100
+Connection ~ 1500 7100
+Wire Wire Line
+	1500 7100 1500 7000
+Wire Wire Line
+	1500 7200 1400 7200
+Connection ~ 1500 7200
+Wire Wire Line
+	1500 7200 1500 7100
+Wire Wire Line
+	1400 7300 1500 7300
+Connection ~ 1500 7300
+Wire Wire Line
+	1500 7300 1500 7200
 $EndSCHEMATC

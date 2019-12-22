@@ -605,77 +605,7 @@ F 3 "" H 4700 7050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4700 7050 4700 6950
-$Comp
-L Device:R R208
-U 1 1 5E055E74
-P 6550 2750
-F 0 "R208" V 6500 2900 50  0000 C CNN
-F 1 "0" V 6550 2750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6480 2750 50  0001 C CNN
-F 3 "~" H 6550 2750 50  0001 C CNN
-	1    6550 2750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6400 2750 6000 2750
-$Comp
-L Device:R R209
-U 1 1 5E05B0DA
-P 6550 2850
-F 0 "R209" V 6500 3000 50  0000 C CNN
-F 1 "0" V 6550 2850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6480 2850 50  0001 C CNN
-F 3 "~" H 6550 2850 50  0001 C CNN
-	1    6550 2850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R210
-U 1 1 5E05B168
-P 6550 2950
-F 0 "R210" V 6500 3100 50  0000 C CNN
-F 1 "0" V 6550 2950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6480 2950 50  0001 C CNN
-F 3 "~" H 6550 2950 50  0001 C CNN
-	1    6550 2950
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R211
-U 1 1 5E05B59D
-P 6550 3150
-F 0 "R211" V 6500 3300 50  0000 C CNN
-F 1 "0" V 6550 3150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6480 3150 50  0001 C CNN
-F 3 "~" H 6550 3150 50  0001 C CNN
-	1    6550 3150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6400 2850 6000 2850
-Wire Wire Line
-	6000 2950 6400 2950
-Wire Wire Line
-	6400 3150 6000 3150
-Text Label 6050 3150 0    50   ~ 0
-FTDI_SS
-Text Label 6050 2950 0    50   ~ 0
-FTDI_SO
-Text Label 6050 2850 0    50   ~ 0
-FTDI_SI
-Text Label 6050 2750 0    50   ~ 0
-FTDI_SCK
-NoConn ~ 6000 3050
-NoConn ~ 6000 3250
-NoConn ~ 6000 3650
-NoConn ~ 6000 3750
-NoConn ~ 6000 3850
-NoConn ~ 6000 3950
-NoConn ~ 6000 4050
-NoConn ~ 6000 4150
-NoConn ~ 6000 4250
-NoConn ~ 6000 4350
-NoConn ~ 6000 5250
+NoConn ~ 6000 4850
 NoConn ~ 6000 5450
 NoConn ~ 6000 5550
 NoConn ~ 6000 5650
@@ -686,174 +616,45 @@ NoConn ~ 6000 6050
 NoConn ~ 6000 6150
 NoConn ~ 6000 6350
 NoConn ~ 6000 6450
-$Comp
-L Device:R R212
-U 1 1 5E0DE96E
-P 6550 3350
-F 0 "R212" V 6500 3500 50  0000 C CNN
-F 1 "0" V 6550 3350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6480 3350 50  0001 C CNN
-F 3 "~" H 6550 3350 50  0001 C CNN
-	1    6550 3350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R213
-U 1 1 5E0DEA50
-P 6550 3450
-F 0 "R213" V 6500 3600 50  0000 C CNN
-F 1 "0" V 6550 3450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6480 3450 50  0001 C CNN
-F 3 "~" H 6550 3450 50  0001 C CNN
-	1    6550 3450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R214
-U 1 1 5E0DEADE
-P 6550 4550
-F 0 "R214" V 6500 4700 50  0000 C CNN
-F 1 "0" V 6550 4550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6480 4550 50  0001 C CNN
-F 3 "~" H 6550 4550 50  0001 C CNN
-	1    6550 4550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R215
-U 1 1 5E0DEF24
-P 6550 4650
-F 0 "R215" V 6500 4800 50  0000 C CNN
-F 1 "0" V 6550 4650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6480 4650 50  0001 C CNN
-F 3 "~" H 6550 4650 50  0001 C CNN
-	1    6550 4650
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R216
-U 1 1 5E0DEFB2
-P 6550 4750
-F 0 "R216" V 6500 4900 50  0000 C CNN
-F 1 "0" V 6550 4750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6480 4750 50  0001 C CNN
-F 3 "~" H 6550 4750 50  0001 C CNN
-	1    6550 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R217
-U 1 1 5E0DF040
-P 6550 4850
-F 0 "R217" V 6500 5000 50  0000 C CNN
-F 1 "0" V 6550 4850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6480 4850 50  0001 C CNN
-F 3 "~" H 6550 4850 50  0001 C CNN
-	1    6550 4850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R218
-U 1 1 5E0DF0CE
-P 6550 4950
-F 0 "R218" V 6500 5100 50  0000 C CNN
-F 1 "0" V 6550 4950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6480 4950 50  0001 C CNN
-F 3 "~" H 6550 4950 50  0001 C CNN
-	1    6550 4950
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R219
-U 1 1 5E0DF171
-P 6550 5050
-F 0 "R219" V 6500 5200 50  0000 C CNN
-F 1 "0" V 6550 5050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6480 5050 50  0001 C CNN
-F 3 "~" H 6550 5050 50  0001 C CNN
-	1    6550 5050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R220
-U 1 1 5E0DF1FF
-P 6550 5150
-F 0 "R220" V 6500 5300 50  0000 C CNN
-F 1 "0" V 6550 5150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6480 5150 50  0001 C CNN
-F 3 "~" H 6550 5150 50  0001 C CNN
-	1    6550 5150
-	0    1    1    0   
-$EndComp
+Wire Wire Line
+	6400 2750 6000 2750
+Wire Wire Line
+	6000 2850 6400 2850
+Wire Wire Line
+	6400 2950 6000 2950
+Wire Wire Line
+	6000 3050 6400 3050
+Wire Wire Line
+	6400 3150 6000 3150
+Wire Wire Line
+	6000 3250 6400 3250
 Wire Wire Line
 	6400 3350 6000 3350
-Wire Wire Line
-	6000 3450 6400 3450
-Wire Wire Line
-	6400 4550 6000 4550
-Wire Wire Line
-	6000 4650 6400 4650
-Wire Wire Line
-	6400 4750 6000 4750
-Wire Wire Line
-	6000 4850 6400 4850
-Wire Wire Line
-	6400 4950 6000 4950
-Wire Wire Line
-	6000 5050 6400 5050
-Wire Wire Line
-	6400 5150 6000 5150
-Wire Wire Line
-	7100 2750 6700 2750
-Wire Wire Line
-	6700 2850 7100 2850
-Wire Wire Line
-	7100 2950 6700 2950
-Wire Wire Line
-	6700 3150 7100 3150
-Wire Wire Line
-	7100 3350 6700 3350
-Wire Wire Line
-	6700 3450 7100 3450
-Wire Wire Line
-	7100 4550 6700 4550
-Wire Wire Line
-	6700 4650 7100 4650
-Wire Wire Line
-	7100 4750 6700 4750
-Wire Wire Line
-	6700 4850 7100 4850
-Wire Wire Line
-	7100 4950 6700 4950
-Wire Wire Line
-	6700 5050 7100 5050
-Wire Wire Line
-	7100 5150 6700 5150
-Text HLabel 7100 2750 2    50   Output ~ 0
+Text HLabel 6400 4550 2    50   Output ~ 0
 ICE_SCK
-Text HLabel 7100 2850 2    50   Output ~ 0
+Text HLabel 6400 4650 2    50   Output ~ 0
 ICE_MOSI
-Text HLabel 7100 2950 2    50   Input ~ 0
+Text HLabel 6400 4750 2    50   Input ~ 0
 ICE_MISO
-Text HLabel 7100 3150 2    50   Output ~ 0
+Text HLabel 6400 4950 2    50   Output ~ 0
 ICE_SS_B
-Text HLabel 7100 3350 2    50   Input ~ 0
+Text HLabel 6400 5150 2    50   Input ~ 0
 ICE_CDONE
-Text HLabel 7100 3450 2    50   Output ~ 0
+Text HLabel 6400 5250 2    50   Output ~ 0
 ICE_CRESET
-Text HLabel 7100 4550 2    50   Output ~ 0
+Text HLabel 6400 2750 2    50   Output ~ 0
 FTDI_TX__ICE_RX
-Text HLabel 7100 4650 2    50   Input ~ 0
+Text HLabel 6400 2850 2    50   Input ~ 0
 FTDI_RX__ICE_TX
-Text HLabel 7100 4750 2    50   Output ~ 0
+Text HLabel 6400 2950 2    50   Output ~ 0
 FTDI_RTS
-Text HLabel 7100 4850 2    50   Input ~ 0
+Text HLabel 6400 3050 2    50   Input ~ 0
 FTDI_CTS
-Text HLabel 7100 4950 2    50   Output ~ 0
+Text HLabel 6400 3150 2    50   Output ~ 0
 FTDI_DTR
-Text HLabel 7100 5050 2    50   Input ~ 0
+Text HLabel 6400 3250 2    50   Input ~ 0
 FTDI_DSR
-Text HLabel 7100 5150 2    50   Input ~ 0
+Text HLabel 6400 3350 2    50   Input ~ 0
 FTDI_DCD
 $Comp
 L Device:C C209
@@ -1026,4 +827,53 @@ Wire Wire Line
 Connection ~ 5900 2200
 Wire Wire Line
 	5900 2200 6300 2200
+NoConn ~ 6000 5050
+Wire Wire Line
+	6000 5250 6400 5250
+Wire Wire Line
+	6400 5150 6000 5150
+Wire Wire Line
+	6000 4950 6400 4950
+Wire Wire Line
+	6400 4750 6000 4750
+Wire Wire Line
+	6000 4650 6400 4650
+Wire Wire Line
+	6400 4550 6000 4550
+Wire Wire Line
+	6400 3650 6000 3650
+Wire Wire Line
+	6000 3750 6400 3750
+Wire Wire Line
+	6400 3850 6000 3850
+Wire Wire Line
+	6000 3950 6400 3950
+Wire Wire Line
+	6400 4050 6000 4050
+Wire Wire Line
+	6000 4150 6400 4150
+Wire Wire Line
+	6400 4250 6000 4250
+Wire Wire Line
+	6400 3450 6000 3450
+Wire Wire Line
+	6400 4350 6000 4350
+Text HLabel 6400 3450 2    50   BiDi ~ 0
+ADBUS7
+Text HLabel 6400 3650 2    50   BiDi ~ 0
+ACBUS0
+Text HLabel 6400 3750 2    50   BiDi ~ 0
+ACBUS1
+Text HLabel 6400 3850 2    50   BiDi ~ 0
+ACBUS2
+Text HLabel 6400 3950 2    50   BiDi ~ 0
+ACBUS3
+Text HLabel 6400 4050 2    50   BiDi ~ 0
+ACBUS4
+Text HLabel 6400 4150 2    50   BiDi ~ 0
+ACBUS5
+Text HLabel 6400 4250 2    50   BiDi ~ 0
+ACBUS6
+Text HLabel 6400 4350 2    50   BiDi ~ 0
+ACBUS7
 $EndSCHEMATC
